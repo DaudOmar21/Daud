@@ -1,0 +1,151 @@
+body {
+    background-color: #6A7AB5;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: center; 
+align-items: center;
+
+}
+
+
+.navbar .logo{
+    width: 500px;
+    cursor: pointer;
+    transform: translateX(-270px);
+}
+
+ul{
+    width: 80;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    transform: translateX(-20%);
+}
+
+ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-top: -3%;
+    transition: .4s ease;
+}
+
+ul li a:hover{
+    color: #DBA111;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #DBA111;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 10%;
+    background-color: #6A7AB5;
+    border-radius: 20px;
+    flex-wrap: wrap; 
+}
+
+.contact-left {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contact-left-title hr {
+    width: 50px;
+    border: 2px solid #DBA111;
+    margin: 0;
+}
+
+.contact-inputs {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.contact-inputs:focus {
+    border-color: #DBA111;
+    box-shadow: inset 0 0 10px rgba(219, 161, 17, 0.3);
+}
+
+textarea.contact-inputs {
+    resize: none; 
+    height: 120px;
+}
+
+button{
+    background: #DBA111;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #DBA111;
+    cursor: pointer;
+
+}
+.contact-right {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-img {
+    width: 100vh;
+    animation: float 3s ease-in-out infinite;
+}
+
+

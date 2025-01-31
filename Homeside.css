@@ -1,0 +1,154 @@
+body {
+    width: 100%;
+    background-color: #6A7AB5;
+    height: 100%;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-right: 100px;
+    padding: 15px 0;
+
+}
+
+.logo:hover{
+    transform: translate(-55%);
+}
+.navbar .logo{
+    width: 500px;
+    cursor: pointer;
+    transform: translateX(-950px);
+    transition: 4s ease;
+}
+
+ul{
+    width: 80;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+    transform: translateX(-500px);
+}
+
+ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-top: -3%;
+    transition: .4s ease;
+}
+
+ul li a:hover{
+    color: #DBA111;
+}
+
+.info {
+    margin: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+}
+.info h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.info h3{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.info span{
+    color: #DBA111;
+}
+a{
+    color: rgb(255, 255, 255);
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .Daud{
+    left: 55%;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 30px;
+}
+.icons ion-icon{
+    font-size: 40px;
+    transform: translateX(-320px);
+    
+}
+.icons ion-icon:hover{
+    color: #DBA111;
+}
+
+
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #DBA111;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+
+button{
+    background: #DBA111;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #DBA111;
+    cursor: pointer;
+
+}
